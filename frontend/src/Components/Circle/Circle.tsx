@@ -6,7 +6,7 @@ type CircleProps = {
   durationMs?: number;
 };
 
-const Circle = ({ size = 174, maxValue , durationMs = 3000 }: CircleProps) => {
+const Circle = ({ size = 140, maxValue , durationMs = 3000 }: CircleProps) => {
   const [progress, setProgress] = useState(0);
   const segmentCount = 4;
 
@@ -72,7 +72,8 @@ const Circle = ({ size = 174, maxValue , durationMs = 3000 }: CircleProps) => {
         alignItems: "center",
         justifyContent: "center",
         background: "radial-gradient(circle at 30% 25%, #22AFE8 0%, #0E9DDD 65%, #0B93D1 100%)",
-        boxShadow: "0 20px 45px rgba(0, 140, 200, 0.35)",
+        boxShadow:
+          "0 0 56px rgba(24, 170, 229, 0.38), 0 16px 26px rgba(0, 120, 175, 0.28)",
       }}
     >
       <svg

@@ -1,29 +1,33 @@
 @import "tailwindcss";
-@theme{
-    --primary:#00A0E3;
-    /* --border:#909090; */
-    --border:#E0E0E0;
-    
+@theme {
+  --primary: #00a0e3;
+  /* --border:#909090; */
+  --border: #e0e0e0;
+  --text-light: #4d4d4d;
 }
-body{
+body {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 8%;
+}
+* {
+  scrollbar-width: none;
 }
 @keyframes capPulse {
   0% {
-    transform: translate(-50%, -40%) ;
+    transform: translate(-50%, -40%);
     /* opacity: 0.6; */
   }
 
   50% {
-    transform: translate(-50%, -70%) ;
+    transform: translate(-50%, -70%);
     /* opacity: 1; */
   }
 
   100% {
-    transform: translate(-50%, -40%) ;
+    transform: translate(-50%, -40%);
     /* opacity: 0.6; */
   }
 }
-.animate-cap-pulse{
+.animate-cap-pulse {
   animation: capPulse 1.4s ease-in-out infinite;
 }
